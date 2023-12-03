@@ -1,0 +1,65 @@
+<?php
+# SIDEBAR MENU ===========================================================================
+    // CATEGORIAS
+    $params_cat = array(
+      'publicar' => 'S'
+    );
+    $categoria_controller = new CategoriaController();
+
+    $categorias = $categoria_controller->getPublished($params_cat);
+
+
+    // SUB CATEGORIAS
+    $params_subcat = array(
+      'publicar' => 'S'
+    );
+    $sub_categoria_controller = new SubCategoriaController();
+
+    $sub_categorias = $sub_categoria_controller->getPublished($params_subcat);
+
+?>
+
+<!-- sidebar START -->
+  <nav class="sidebar sidebar-primary position-relative mx-auto scroll-item" data-sidebar="menu" data-menu-toggle="all">
+
+    <ul class="sidenav">
+
+    <?php
+    foreach ($categorias as $index => $row) {
+      $url = "categorias/" . $row->categoria_id ."/". UrlHelper::urlFriendly($row->cat_nombre) ;
+    ?>
+
+    <li>
+      <a class="menu <?php if($sidebar_menu[0] == $row->categoria_id){ echo 'active'; } ?>" href="#" role="button">
+        <?php echo $row->cat_nombre?>
+      </a>
+      <ul class="menu-items">
+
+        <?php
+        foreach ($sub_categorias as $index => $row_sc) {
+          $sc_nombre = $row_sc->sc_nombre ;
+          $url_sc = $url ."/".  $row_sc->sub_categoria_id ."/". UrlHelper::urlFriendly($sc_nombre) ;
+
+          if( $row_sc->categoria_id == $row->categoria_id)
+          {
+        ?>
+        <li>
+          <a class="<?php if($sidebar_menu[0] == $row->categoria_id && $sidebar_menu[1] == $row_sc->sub_categoria_id){echo 'active';} ?>" href="<?php echo $url_sc ?>">
+            <i class="icofont icofont-curved-right"></i> <?php echo $row_sc->sc_nombre ?>
+          </a>
+        </li>
+        <?php
+          }
+        }
+        ?>
+
+      </ul>
+    </li>
+
+    <?php
+    }
+    ?>
+
+    </ul>
+  </nav>
+  <!-- sidebar END -->

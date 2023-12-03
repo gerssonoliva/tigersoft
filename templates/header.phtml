@@ -1,0 +1,151 @@
+<?php $nav_home=!empty( $setvar['nav_home'] ) ? $setvar['nav_home'] : '' ; ?>
+
+<div class="header-top">
+  <div class="header_p">
+    <div class="row">
+      <div class="col-sm-7 col-md-8 col-lg-9 d-flex align-items-center justify-content-center">
+        <ul class="list-header f-montserrat fs-1x-25 fs-md-1x-50 fw-500">
+          <li class="mr-0 mr-sm-3 mx-md-5 mx-lg-2">
+            <i class='bx bx-phone-call'></i>
+            <span>
+              <span class="d-none d-md-inline d-lg-none">Contáctanos:</span>  Fijo:<a href="+515587912">(+51) 5587912 </a><span class="mx-2">/</span>Cel: <a
+                href="+51971257642">(+51) 971 257 642</a>
+            </span>
+          </li>
+          <li class="d-none d-md-inline ml-md-5 ml-xl-0">
+            <i class='bx bx-envelope'></i><a href="mailto:administracion@corptigersoft.com.pe" class="">administracion@corptigersoft.com.pe</a>
+          </li>
+        </ul>
+        <!-- <ul class="list-header">
+          <li class="icono_1">
+            <i class='bx bx-phone-call'></i>
+            <span>
+              Contáctanos: Fijo:<a href="+515587912">(+51) 5587912 </a><span class="mx-2">/</span>Cel: <a
+                href="+51971257642">(+51) 971 257 642</a>
+            </span>
+          </li>
+          <li class="icono_2">
+            <i class='bx bx-envelope'></i>
+            <span>
+              admi@tigersoft.com.pe
+            </span>
+          </li>
+          <li class="icono_3">
+            <div class="lupa">
+              <div class="">
+                <input type="text" class="radio radius-left">
+                <a href="">
+                  <i class='bx bx-search-alt-2'></i>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="icono_4">
+            <i class='bx bxs-key'></i>
+            <a class="" href="" target="_blank" title="">
+              Acceso/Login
+            </a>
+          </li>
+        </ul> -->
+      </div>
+      <div class="col-sm-5 col-md-4 col-lg-3 text-right">
+        <ul class="social d-flex justify-content-center">
+          <ul class="list-header">
+            <li class="mr-3">
+              <i class='bx bxs-key'></i>
+              <a class="" href="" target="_blank" class="">
+                Acceso/Login
+              </a>
+            </li>
+          </ul>
+          <li class="m-sm-auto mr-1">
+            <a class="icon-circle" href="" target="_blank" title="Facebook Tiger Soft">
+              <i class="bx bxl-facebook fs-1x-25"></i>
+            </a>
+          </li>
+          <li class="m-sm-auto mr-1">
+            <a class="icon-circle" href="" target="_blank" title="Twitter Tiger Soft">
+              <i class='bx bxl-twitter fs-1x-25'></i>
+            </a>
+          </li>
+          <li class="m-sm-auto mr-1">
+            <a class="icon-circle" href="" target="_blank" title="Youtube Tiger Soft">
+              <i class='bx bx-caret-right fs-1x-25'></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header>
+
+  <nav class="navbar navbar-expand-md bg-white text-dark navbar-light py-2 py-md-0 <?php echo $nav_home; ?> fw-700 "
+    data-toggle="sticky-onscroll">
+    <div class="container nav-container p-md-0 p-lg-2">
+      <div class="brand-md content_logo">
+        <a class="navbar-brand fw-700 link-secondary text-uppercase d-flex align-items-center logo-brand" href="./">
+          <img class="img-fluid logo-brand logo p-2 p-md-0 p-lg-2" src="img/logo_tiger.png" alt="Logo Tiger Soft, Chiclayo" />
+        </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-scrollpy"
+        aria-controls="navbar-scrollpy" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse effect-nav" id="navbar-scrollpy">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-md-center <?php if ($setvar['active'][0] == 1) {echo 'active';}?> " href="./">
+              <span>INICIO</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-md-center <?php if ($setvar['active'][0] == 2) {echo 'active';}?>" href="nosotros">
+              <span>NOSOTROS</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-md-center <?php if ($setvar['active'][0] == 3) {echo 'active';}?>" href="servicios">
+              <span>SERVICIOS</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-md-center <?php if ($setvar['active'][0] == 4) {echo 'active';}?>" href="productos">
+              <span>PRODUCTOS</span>
+            </a>
+          </li>
+          
+          <li class="nav-item ">
+            <a class="nav-link text-md-center <?php if ($setvar['active'][0] == 5) {echo 'active';}?>" href="contactanos">
+              <span>CONTÁCTANOS</span>
+            </a>
+          </li>
+          <li class="nav-item d-sm-none">
+            <i class='bx bxs-key'></i>
+              <a class="" href="" target="_blank" class="">
+                Acceso/Login
+              </a>
+          </li>
+
+          <li class="nav-item d-block d-md-none d-lg-block">
+            <div class="google_play">
+              <a class="nav-link text-md-center" href="https://play.google.com/store/apps/details?id=com.tigersoft.gps&hl=es" target="_blank">
+                <span><img class="img-fluid" src="img/google_play.png" alt="Logo Tiger Soft, Chiclayo" /></span>
+              </a>
+            </div>
+
+          </li>
+
+        </ul>
+
+
+      </div>
+  </nav>
+
+</header>

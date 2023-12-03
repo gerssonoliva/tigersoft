@@ -1,0 +1,100 @@
+/* fill social */
+.fill-facebook,
+.fill-facebook svg {
+  fill: #0053b7;
+}
+
+.fill-facebook:hover,
+.fill-facebook svg:hover {
+  fill: #004393;
+}
+
+
+.fill-whatsapp,
+.fill-whatsapp svg {
+  fill: #53d026;
+}
+
+.fill-whatsapp:hover,
+.fill-whatsapp svg:hover {
+  fill: #4ca92b;
+}
+
+// list social
+ul.social {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
+  // display: flex;
+
+}
+
+ul.social li {
+  display: inline-block;
+  margin-right: .35rem;
+  // display: flex;
+  // align-items: center;
+}
+
+ul.social li a {
+  text-decoration: none !important;
+  line-height: normal;
+}
+
+.social li a:hover {
+  // opacity: 0.75;
+  transition: all 0.8s;
+}
+
+
+.social li a {
+  color: $primary;
+}
+
+.social li a:hover {
+  color: $white !important;
+}
+
+// White
+.social-white li a {
+  color: $white;
+}
+
+.social-white li a:hover {
+  color: rgba(#000000, .5) !important;
+}
+
+/* Dark */
+.social-dark li a {
+  color: $dark;
+}
+
+.social-dark li a:hover {
+  color: lighten($dark, 5%) !important;
+}
+
+.social a.icon-circle,
+.social a .icon-circle {
+  border-radius: 50%;
+  background: #b2b2b2;
+  // width: 22px;
+  // height: 22px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $dark;
+  // width: 1em;
+  // height: 1em;
+  font-size: 1em;
+  padding: 0.25rem;
+
+}
+
+
+.social a.icon-circle:hover,
+.social a:hover .icon-circle {
+  background: $primary!important;
+  color: $white;
+}
+

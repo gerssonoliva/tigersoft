@@ -1,0 +1,30 @@
+.elementos_carrucel {
+    .overlay {
+        box-shadow: 0px 0px 50px 70px rgba(33, 33, 33, .57);
+    }
+}
+
+.services .slick-prev,
+.clientes .slick-prev {
+    top: 15px !important;
+    left: auto !important;
+    right: 45px !important;
+    margin-right: 10px !important;
+}
+
+.services .slick-next,
+.clientes .slick-next {
+    top: 15px !important;
+    left: auto !important;
+    right: 15px !important;
+}
+
+.services .slick-prev:before,
+.services .slick-next:before {
+    color: rgba(197, 197, 197, 1.0) !important;
+}
+
+.clientes .slick-prev:before,
+.clientes .slick-next:before {
+    color: $primary !important;
+}

@@ -1,0 +1,60 @@
+.circle-nosotros {
+    width: 110px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-nosotros {
+    .img-nosotros {
+        max-height: 40vh;
+        max-width: 100%;
+    }
+}
+
+.img-fachada {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.img_encabezado {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.equipo {
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+    transition: all ease-in .16s;
+}
+
+.equipo:hover {
+    //transform: scale(1.2);
+    transform: translateY(-10px);
+}
+
+.nuestra_empresa a {
+    border: 2px solid rgba(255, 127, 0, 1.0);
+    color: rgba(255, 127, 0, 1.0);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nuestra_empresa a:hover {
+    transition: .5s;
+    text-decoration: none;
+    border: 2px solid rgba(172, 171, 171, 1);
+    color: rgba(172, 171, 171, 1);
+}
+
+.nos-text {
+    background: #f5f5f5;
+}
+
+.nosotros .slick-prev:before,
+.nosotros .slick-next:before {
+    color: rgba(255, 127, 0, 1.0) !important;
+}

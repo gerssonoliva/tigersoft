@@ -1,0 +1,125 @@
+//  ---------------------------------------------------
+//     NAVBAR STYLE
+// -----------------------------------------------------
+.navbar {
+  box-shadow: 0 0.125rem 0.25rem rgba(15, 15, 15, 0.075);
+
+
+  .nav-item {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+
+    .nav-link {
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+    }
+
+    .nav-link.active {
+      color: $primary;
+    }
+
+    .contact {
+      background: $primary;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      border-radius: 500px;
+      color: white;
+    }
+  }
+  .google_play a span img{
+    max-width: 140px !important;
+  }
+  .collapse ul li{
+    margin: auto !important;
+  }
+}
+
+
+//  ---------------------------------------------------
+//     HEADER STYLE
+// -----------------------------------------------------
+
+
+
+.brand-md {
+  height: inherit;
+
+  .navbar-brand {
+    height: 100%;
+    overflow: hidden;
+    padding: 0 !important;
+    margin-right: 0;
+
+    .logo-brand {
+      max-height: 95px !important;
+      height: 100%;
+      transition: all 1s ease;
+      // padding-bottom: .5rem;
+      // width: 0;
+    }
+
+  }
+
+}
+
+
+//  ---------------------------------------------------
+//     NAVBAR STYLE
+// -----------------------------------------------------
+
+
+
+.nav-home:not(.is-sticky) {
+  //position: absolute;
+  width: 100%;
+  display: block;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 1) !important;
+
+
+  .logo-brand {
+    //max-height: 95px !important;
+    height: 100%;
+    transition: all 1s ease;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      //color: $white;
+
+      // @include hover-focus() {
+      //   color: $navbar-light-hover-color;
+      // }
+
+    }
+
+  }
+
+  .navbar-toggler {
+    color: $white;
+    // border-color: $navbar-light-toggler-border-color;
+  }
+
+  .google_play a span img{
+    max-width: 140px !important;
+  }
+  .collapse ul li{
+    margin: auto !important;
+  }
+  // .navbar-toggler-icon {
+  //   background-image: escape-svg($navbar-light-toggler-icon-bg);
+  // }
+
+
+}
+/*
+@media (max-width: 1366px) {
+
+}*/
+
+
+@include media-breakpoint-down(md) {
+  .nav-home:not(.is-sticky) {
+    top: auto!important;
+  }
+}

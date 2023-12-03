@@ -1,0 +1,46 @@
+      <form class="form-theme bg-primary p-4 mb-5 rounded-top rounded-bottom" 
+      name="formContacto" id="formContacto" onSubmit="formReset()">
+          <div class="col-md-9 position-relative form-row mx-auto">
+
+            <div class="col-12 mb-4">
+              <input type="text" class="form-control rounded-0 border-0" name="nombre" id="nombre" placeholder="Nombres y Apellidos" required="Campo obligatorio">
+            </div>
+
+            <div class="col-12 mb-4">
+              <input type="text" class="form-control rounded-0 border-0" name="dni" id="dni" placeholder="N° DNI" required="Campo obligatorio">
+            </div>
+
+            <div class="col-12 mb-4">
+              <input type="text" class="form-control rounded-0 border-0" name="ruc" id="ruc" placeholder="N° RUC">
+            </div>
+
+            <div class="col-12 mb-4">
+              <input type="email" class="form-control rounded-0 border-0" name="email" id="email" placeholder="Email" required="Campo obligatorio">
+            </div>
+
+            <div class="col-12 mb-4">
+              <input type="tel" class="form-control rounded-0 border-0" name="telefono" id="telefono" placeholder="Teléfono" required="Campo obligatorio">
+            </div>
+
+            <div class="col-md-12 mb-4">
+              <textarea class="form-control rounded-0 border-0" name="mensaje" id="mensaje" cols="30" placeholder="Mensaje" rows="6" required="Campo obligatorio"></textarea>
+            </div>
+          </div>
+            <div class="w-100 mb-4  text-center position-absolute" style="left: 0;">
+              <button class="btn btn-dark text-white px-4 px-md-5 text-uppercase rounded-pill">
+                Enviar
+              </button>
+            </div>
+      </form>
+
+      <div id="alertConfirmPrincipal">
+          <p id="msg"></p>
+      </div>
+
+      <script type="text/javascript">
+        function formReset(){
+          setTimeout('document.formContacto.reset()', 1000);
+          alert("Datos enviados exitosamente");
+          return false;
+        }
+      </script>

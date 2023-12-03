@@ -1,0 +1,33 @@
+.form-search {
+
+  .input-search {
+    background-color: #f7f8f8;
+
+    border-color: #f1f1f1;
+    border-radius: 0;
+  }
+
+  .input-search:active,
+  .input-search:focus {
+    border-color: #dcdcdc;
+    box-shadow: 0 0 0 0.1rem rgba(99, 99, 99, 0.15) !important;
+  }
+
+  .wrap-btn-search {
+    position: absolute;
+    right: 10px;
+    z-index: 9;
+  }
+
+  .btn-search i {
+    color: #b0afb5
+  }
+
+  @include media-breakpoint-up(md) {
+    .input-search {
+      min-width: 300px;
+    }
+  }
+
+
+}

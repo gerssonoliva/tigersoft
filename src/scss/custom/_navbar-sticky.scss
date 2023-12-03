@@ -1,0 +1,54 @@
+.header {
+  position: relative;
+  transition: position 0.5s ease-in-out;
+}
+
+
+@include media-breakpoint-up(md) {
+
+  .navbar {
+    transition: all 0.9s ease-in-out;
+
+
+
+  }
+
+
+}
+
+@include media-breakpoint-down(md) {
+
+  .brand-md .navbar-brand .logo-brand {
+    max-height: 65px;
+  }
+
+  /* .sticky {
+    .brand-md .navbar-brand .logo-brand {
+      max-height: 60px;
+      padding-top: .25rem;
+    }
+  } */
+}
+
+
+.sticky.is-sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  transition: all .5s ease-in-out;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+
+  .brand-md {
+    .navbar-brand {
+      .logo-brand {
+        transition: all .5s ease-in-out;
+
+        max-height: 60px;
+      }
+    }
+  }
+
+}
